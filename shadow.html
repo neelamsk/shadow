@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body>
+    <div>
+        <img id="myimg" class="myimg test" style="border:1px solid #ccc;" src="http://cdn.redbuttondigital.com/Avatars/31/thumb/normal.png" />
+    </div>
+    <div>
+        <img class="myimg" src="http://cdn.redbuttondigital.com/Avatars/33/thumb/normal.png" />
+    </div>
+    <div>
+        <img class="myimg" width="200" height="200" src="http://www.mathunion.org/fileadmin/IMU/Logo/IMU-logo-wt.png" />
+    </div>
+    <div>
+        <img class="myimg" style="width: 200px; height: 200px;" src="http://upload.wikimedia.org/wikipedia/en/2/2d/SRU-Logo-Transparent.png" />
+    </div>
+    <script src="shadow.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            //ImageShadow.Options({ control: '#myimg' }).Shadow();
+
+            ImageShadow.Options(
+                {
+                    control: '.myimg',
+                    shadowColor: '#999',
+                    shadowBlur: 20,
+                    shadowOffsetX: 15,
+                    shadowOffsetY: 15,
+                    applyID: true,
+                    applyCSS: true,
+                    applyStyle: true,
+                    beforeShadow: function (Config, img, canvas) { },
+                    afterShadow: function (Config, img, canvas) { }
+                }).Shadow();
+
+            //ImageShadow.Options({ control: 'img' }).Shadow();
+        }
+    </script>
+</body>
+</html>
