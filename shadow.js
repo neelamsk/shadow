@@ -1,6 +1,6 @@
 ﻿/*
-*  Copyright(c) 2012, Neelam Gupta
-*  http://www.codezaway.com
+*  Copyright(c) 2012, budhitechno.com
+*  http://www.budhitechno.com
 *
 * Licensed under the GPL license:
 *
